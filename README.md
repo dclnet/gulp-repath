@@ -48,6 +48,18 @@ gulp.task('finale-html', ['finale-css'], function() {
 gulp.task('prod', ['finale-html']);
 
 ```
+It's output
+
+in `hash` mode:
+
+`/static/js/api.js` => `/static/js/api-a3b35d82dd89ab76.js`
+
+`@cdn/static/img/bg.jpg` => `//localhost:8080/static/img/bg-a3b35d82dd89ab76.jpg`
+in `param` mode:
+
+`/static/js/api.js` => `/static/js/api.js?ver=a3b35d82dd89ab76`
+
+`@cdn/static/img/bg.jpg` => `//localhost:8080/static/img/bg.jpg?ver=a3b35d82dd89ab76`
 
 ### Options
 
