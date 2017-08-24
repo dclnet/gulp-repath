@@ -1,6 +1,6 @@
 {
   "name": "gulp-repath",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "gulp plugin for replace url/path",
   "main": "index.js",
   "scripts": {
