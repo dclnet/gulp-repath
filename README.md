@@ -12,6 +12,9 @@ $ npm install --save gulp-repath
 
 Using gulp-repath replace links to assets in html/css templates.
 ```js
+var gulp = require('gulp');
+var repath = require('./gulp-repath');
+
 var repathConf = {
   verMode: 'hash',  // origin, hash, param
   hashName: '{origin}-{hash}',
@@ -73,11 +76,11 @@ One of `origin`, `hash`, `param`, Default value is `param`
 
 `hash` : rename file name add file's hash use option hashName
 
-"/static/js/jj.js" => "/static/js/jj-a3b35d82dd89ab76.js"
+"/static/js/api.js" => "/static/js/api-a3b35d82dd89ab76.js"
 
 `param` : add ver=hash to url
 
-"/static/js/jj.js" => "/static/js/jj.js?ver=a3b35d82dd89ab76"
+"/static/js/api.js" => "/static/js/api.js?ver=a3b35d82dd89ab76"
 
 #### hashName
 Type : `String`
@@ -92,12 +95,12 @@ url => directories
 ```js
 baseMap: {'static': './static'}
 ```
-url "/static/js/jj.js" => local file "./static/js/jj.js"
+url "/static/js/api.js" => local file "./static/js/api.js"
 
 #### element
 Type : `Array`
 
-Replace element, `script`: javascript src, `style`: link href, `image`: img src or url(xxxxx.ext) in css, Default value is ['script', 'style', 'image']
+Replace element, `script`: javascript src, `style`: link href, `image`: img src or url(xxxx) in css, Default value is ['script', 'style', 'image']
 
 #### excludeFile
 Type : `Array`
@@ -113,4 +116,4 @@ url path to be replace
     '@cdn/': '//localhost:8080/'
   }
 ```
-It will replace "@cdn/static/js/jj.js" to "//localhost:8080/satic/js/jj.js"
+It will replace "@cdn/static/js/api.js" to "//localhost:8080/satic/js/api.js"
