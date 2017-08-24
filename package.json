@@ -8,13 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dclnet/gulp-repath"
+    "url": "https://github.com/dclnet/gulp-repath.git"
   },
   "keywords": [
-    "modify",
-    "url",
-    "rewrite",
-    "url"
+    "modify url",
+    "rewrite url"
   ],
   "author": "dclnet@qq.com",
   "license": "ISC",
