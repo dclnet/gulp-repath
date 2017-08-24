@@ -53,20 +53,28 @@ gulp.task('prod', ['finale-html']);
 
 #### verMode
 Type : `String`
+
 One of `origin`, `hash`, `param`, Default value is `param`
-`origin` : nothing to do.
-`hash` : rename file name add file's hash use option hashName.
+
+`origin` : nothing to do
+
+`hash` : rename file name add file's hash use option hashName
+
 "/static/js/jj.js" => "/static/js/jj-a3b35d82dd89ab76.js"
+
 `param` : add ver=hash to url
+
 "/static/js/jj.js" => "/static/js/jj.js?ver=a3b35d82dd89ab76"
 
 #### hashName
 Type : `String`
-Use only verMode is `hash`, {origin} is origin file name, {hash} is file's hash
+
+Use only verMode is `hash`, {origin} is origin file name, {hash} is file's hash,
 Default value is '{origin}-{hash}'
 
 #### baseMap
 Type : `Object`
+
 url => directories
 ```js
 baseMap: {'static': './static'}
@@ -75,14 +83,17 @@ url "/static/js/jj.js" => local file "./static/js/jj.js"
 
 #### element
 Type : `Array`
+
 Replace element, `script`: javascript src, `style`: link href, `image`: img src or url(xxxxx.ext) in css, Default value is ['script', 'style', 'image']
 
 #### excludeFile
 Type : `Array`
+
 The files no be replace process.
 
 #### replace
 Type : `Object`
+
 url path to be replace
 ```js
   replace: {
