@@ -1,0 +1,14 @@
+html,body {
+  font-size: 16px;
+}
+html,body,h1,h2,h3,h4,h5,h6,img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 1em;
+}
+.avatar {
+  background-image: url("@cdn/assets/kawayi.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
